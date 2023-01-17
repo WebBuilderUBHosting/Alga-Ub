@@ -1,0 +1,86 @@
+    /* Style Sheet til Sentre og åpningstider-siden til JODA */
+h1{
+    font-size: 2.3em;
+}
+/* Start grid --------------------------------------------------------------------- */
+.container{
+    width: auto;
+    height: auto;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 11fr 5fr;
+    grid-template-areas:"t t t t" 
+                        "v v v h"
+                        "f f f f";
+}
+/* Start main --------------------------------------------------------------------------- */
+.container_venstre{
+    width: auto;
+    height: auto;
+    margin: 10px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(239, 239, 239);
+}
+.container_venstre_top{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.container_venstre_main_1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.container_venstre_main_2{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.tekst, .bilde{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.bilde{
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+.bilde img{ /* Gir style til alle bilder inne i klassen bilde */
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.apningstider_container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dager, .tider{
+    display: flex;
+    flex-direction: column;
+/* Start hoyre ----------------------------------------- */
+}
+.container_hoyre{
+    width: auto;
+    height: auto;
+    margin: 10px 15px 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.container_hoyre_top, .charlottenlund, .solsiden, .annen{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}

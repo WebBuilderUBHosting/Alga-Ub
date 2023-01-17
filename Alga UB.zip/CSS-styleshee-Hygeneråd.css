@@ -1,0 +1,48 @@
+  /* Style Sheet til Hygiene siden til JODA */
+
+/* Start grid --------------------------------------------------------------------- */
+.container{
+    width: auto;
+    height: auto;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 12fr 5fr;
+    grid-template-areas:"t t t t" 
+                        "m m m m"
+                        "f f f f";
+}
+/* Start main ------------------------------------------------------------------------------------------------------------------------- */
+.container_main{
+    width: 60%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    background-color: #29333B;
+    color: white;
+}
+.bilde{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 0px;
+}
+.bilde img{ /* Velger alle bilder i klassen bilde */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tekst{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tekst a{ /* Gir linkene med klasse tekst farge */
+    color: #e26c1d;
+}
