@@ -1,0 +1,51 @@
+  /* Style Sheet til Medlem siden til JODA */
+
+/* Start grid --------------------------------------------------------------------- */
+.container{
+    width: auto;
+    height: auto;
+    display: grid;
+    background-color: lightgrey;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 7fr 3fr;
+    grid-template-areas:"t t t t" 
+                        "b b b b"
+                        "f f f f";
+}
+.background{
+    background-image: url(https://skolerom.no/wp-content/uploads/sites/2/2019/06/plast-cover-1920x1188.jpg); /* Bakgrunnsbilde */
+    background-size: cover; /* Cover beholder aspect ratio, så bildet ikke blir stretched, men dekker hele container */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: cover;
+    color: white;
+    font-family: 'Russo One', sans-serif; /* Quote font */
+margin-top: -20px;
+opacity: 99%;
+border-radius: 2%;
+}
+.background img{
+    opacity: 30%;
+}
+.tekstbak{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.Tekst_Boks{
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+  color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    font-size: larger; 
+}
+/* Start background ----------------------------------------------------------------------------------------------------------------- */
+
+.background-text {
+    text-align: center;
+    -webkit-text-stroke: black 0.3px; /* Skygge bak tekst */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
